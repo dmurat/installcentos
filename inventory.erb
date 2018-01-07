@@ -17,9 +17,7 @@ etcd
 192.168.0.107.nip.io openshift_schedulable=true openshift_node_labels="{'region': 'infra', 'zone': 'default'}"
 
 [OSEv3:vars]
-ansible_user=openshift
 ansible_ssh_user=root
-ansible_become=yes
 
 enable_excluders=false
 enable_docker_excluder=false
