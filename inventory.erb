@@ -46,6 +46,7 @@ openshift_metrics_install_metrics=true
 #openshift_logging_install_logging=true
 
 # Optional for logging. If not configured emptyDir is used by default.
+openshift_logging_es_memory_limit=2Gi
 openshift_logging_storage_kind=nfs
 openshift_logging_storage_nfs_options="*(rw,root_squash)"
 openshift_logging_storage_nfs_directory=/exports
