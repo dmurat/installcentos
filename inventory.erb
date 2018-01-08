@@ -22,11 +22,7 @@ ansible_ssh_user=root
 enable_excluders=false
 enable_docker_excluder=false
 
-containerized=True
-os_sdn_network_plugin_name='redhat/openshift-ovs-multitenant'
 openshift_disable_check=disk_availability,docker_storage,memory_availability,docker_image_availability
-
-openshift_node_kubelet_args={'pods-per-core': ['10']}
 
 deployment_type=origin
 openshift_deployment_type=origin
@@ -55,6 +51,3 @@ openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 
 
 openshift_public_hostname=192.168.0.107.nip.io
 openshift_master_default_subdomain=apps.192.168.0.107.nip.io
-
-#openshift_master_named_certificates=[{"certfile": "/etc/letsencrypt/live/192.168.0.107.nip.io/cert.pem", "keyfile": "/etc/letsencrypt/live/192.168.0.107.nip.io/privkey.pem", "cafile": "/etc/letsencrypt/live/192.168.0.107.nip.io/fullchain.pem"}]
-
